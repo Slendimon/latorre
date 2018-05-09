@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>.: AssistList v1.0 :.</title>
+    <title>.: La Torre  :.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="res/bootstrap3/css/bootstrap.css" rel="stylesheet">
@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./">AssistList <sup><small><span class="label label-success">v1.0</span></small></sup> </a>
+          <a class="navbar-brand" href="./">La torre  </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,7 +105,7 @@ if(Session::getUID()!=""){
 ?>
 
 <hr>
-<p>Evilnapsis &copy; 2015</p>
+<p> La torre &copy; 2018</p>
 
       </div><!-- /#page-wrapper -->
 
