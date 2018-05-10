@@ -13,8 +13,8 @@ class PersonData {
 
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (name,lastname,address,phone,email,user_id,created_at,c1_fullname,c1_address,c1_phone,c1_note) ";
-		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->email\",$this->user_id,$this->created_at,\"$this->c1_fullname\",\"$this->c1_address\",\"$this->c1_phone\",\"$this->c1_note\")";
+		$sql = "insert into ".self::$tablename." (name,lastname,address,phone,email,canal,turno,user_id,created_at,c1_fullname,c1_address,c1_phone,c1_note) ";
+		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->email\",\"$this->canal\",\"$this->turno\",$this->user_id,$this->created_at,\"$this->c1_fullname\",\"$this->c1_address\",\"$this->c1_phone\",\"$this->c1_note\")";
 		return Executor::doit($sql);
 	}
 
@@ -35,7 +35,7 @@ class PersonData {
 
 
 	public function update(){
-		$sql = "update ".self::$tablename." set name=\"$this->name\",lastname=\"$this->lastname\",address=\"$this->address\",phone=\"$this->phone\",email=\"$this->email\",c1_fullname=\"$this->c1_fullname\",c1_address=\"$this->c1_address\",c1_phone=\"$this->c1_phone\",c1_note=\"$this->c1_note\" where id=$this->id";
+		$sql = "update ".self::$tablename." set name=\"$this->name\",lastname=\"$this->lastname\",address=\"$this->address\",phone=\"$this->phone\",email=\"$this->email\",canal=\"$this->canal\",turno=\"$this->turno\",c1_fullname=\"$this->c1_fullname\",c1_address=\"$this->c1_address\",c1_phone=\"$this->c1_phone\",c1_note=\"$this->c1_note\" where id=$this->id";
 		Executor::doit($sql);
 	}
 

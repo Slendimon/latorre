@@ -3,7 +3,7 @@ $alumn = PersonData::getById($_GET["id"]);
 ?>
 <div class="row">
 	<div class="col-md-12">
-	<h1>Editar Person</h1>
+	<h1>Editar Alumno</h1>
 	<br>
 		<form class="form-horizontal" method="post" id="addcategory" action="index.php?action=updateperson" role="form">
 
@@ -42,7 +42,21 @@ $alumn = PersonData::getById($_GET["id"]);
       <input type="text" name="phone" value="<?php echo $alumn->phone; ?>"  class="form-control" id="name" placeholder="Telefono">
     </div>
   </div>
-<h2>Contacto</h2>
+
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Canal*</label>
+    <div class="col-md-6">
+      <input type="text" name="canal" value="<?php echo $alumn->canal; ?>"  class="form-control" id="name" placeholder="Canal">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Turno*</label>
+    <div class="col-md-6">
+      <input type="text" name="turno" value="<?php echo $alumn->turno; ?>"  class="form-control" id="name" placeholder="Turno">
+    </div>
+  </div>
+<h2>Datos del Apoderado</h2>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre completo*</label>
@@ -75,7 +89,7 @@ $alumn = PersonData::getById($_GET["id"]);
     <div class="col-lg-offset-2 col-lg-10">
     <input type="hidden" name="alumn_id" value="<?php echo $_GET["id"];?>">
     <input type="hidden" name="tid" value="<?php echo $_GET["tid"];?>">
-      <button type="submit" class="btn btn-primary">Actualizar Person</button>
+      <button type="submit" class="btn btn-primary">Actualizar Estudiante</button>
     </div>
   </div>
 </form>
