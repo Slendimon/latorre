@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>.: La Torre  :.</title>
+    <title>.: Academia La Torre :.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="res/bootstrap3/css/bootstrap.css" rel="stylesheet">
@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./">La torre  </a>
+          <a class="navbar-brand" href="./" background-color="#00808B">La Torre</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,7 +105,7 @@ if(Session::getUID()!=""){
 ?>
 
 <hr>
-<p> La torre &copy; 2018</p>
+<p>Copyright &copy; 2018</p>
 
       </div><!-- /#page-wrapper -->
 

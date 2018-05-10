@@ -28,7 +28,7 @@ if(Session::getUID()!=""){
 			    		</div>
 			    		<div class="form-group">
 			    			<input class="form-control" placeholder="Contraseña" required name="password" type="password" value="">
-						</div>
+			    		</div>
 			    		<input class="btn btn-primary btn-block" type="submit" value="Iniciar Sesion">
 			    	</fieldset>
 			      	</form>
@@ -37,6 +37,4 @@ if(Session::getUID()!=""){
 
 		</div>
 	</div>
-
-
 <br><br><br>
