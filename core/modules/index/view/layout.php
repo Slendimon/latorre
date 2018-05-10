@@ -55,7 +55,7 @@ if(Session::getUID()!=""):
 ?>
           <li><a href="index.php?view=home"><i class="fa fa-home"></i> Inicio</a></li>
           <li><a href="index.php?view=assistance"><i class="fa fa-check"></i> Asistencia</a></li>
-          <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Personas</a></li>
+          <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Alumnos</a></li>
           <li><a href="index.php?view=list"><i class="fa fa-table"></i> Reporte</a></li>
           <?php if($u->is_admin):?>
           <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
@@ -105,7 +105,7 @@ if(Session::getUID()!=""){
 ?>
 
 <hr>
-<p> La torre &copy; 2018</p>
+<h6> La Torre &copy; 2018</h6>
 
       </div><!-- /#page-wrapper -->
 
