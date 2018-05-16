@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>.: La Torre  :.</title>
+    <title>.: Academia La Torre :.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="res/bootstrap3/css/bootstrap.css" rel="stylesheet">
@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./">La torre  </a>
+          <a class="navbar-brand" href="./">La Torre</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,7 +55,7 @@ if(Session::getUID()!=""):
 ?>
           <li><a href="index.php?view=home"><i class="fa fa-home"></i> Inicio</a></li>
           <li><a href="index.php?view=assistance"><i class="fa fa-check"></i> Asistencia</a></li>
-          <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Personas</a></li>
+          <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Alumnos</a></li>
           <li><a href="index.php?view=list"><i class="fa fa-table"></i> Reporte</a></li>
           <?php if($u->is_admin):?>
           <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
@@ -105,7 +105,7 @@ if(Session::getUID()!=""){
 ?>
 
 <hr>
-<p> La torre &copy; 2018</p>
+<p>Copyright 2018 - La Torre</p>
 
       </div><!-- /#page-wrapper -->
 

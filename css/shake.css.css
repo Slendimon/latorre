@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*html,body{
+	width:100%;
+	min-height: 100%;
+	padding:0;
+	margin:0;
+	background:#f5f5f5;
+} */
+
+/*
+#container{
+	height: auto;
+	padding:158px;
+	text-align:center;
+}*/
+
+
+#btnCheck
+{
+	background: #2FAA96;
+	color:#000000;
+	text-align: center;
+	transition:all 0.1s ease;
+	font-size: "Pala";
+}
+
+#btnCheck:hover
+{
+	background:#2FAA96;
+	cursor:pointer;
+	font-size:19px;
+	transition: all 0.1s ease;
+}
+
+.input-lg
+{
+	width:250px;
+	height: 40px;
+	border-radius:3px;
+	border:1px solid #ccc;
+	font-family:"Pala"; 
+	font-size:22px;
+}
+
+
+.text-submit
+{
+	font-size:20px;
+}
+
+.shaker{
+	-webkit-animation:shakeIt 0.3s linear 4;
+	-moz-animation:shakeIt 0.3s linear 4;
+	-ms-animation:shakeIt 0.3s linear 4;
+	-o-animation:shakeIt 0.3s linear 4
+	animation:shakeIt 0.3s linear 4;
+	border-color:#C00;
+}
+
+@keyframes shakeIt{
+	0%{transform:translateX(-15px);}
+	25%{transform:translateX(15px);}
+	50%{transform:translateX(-15px);}
+	100%{transform:translateX(0px);}
+}
+
+@font-face()
+{
+	font-family:"Pala";
+	src:url(fonts/Pala/pala.ttf),url(fonts/Pala/pala.eot),url(fonts/Pala/pala.otf);
+}
+
+/*@media (max-width: 400px){
+	#principal{
+		width:60%;
+	}
+}*/
