@@ -43,17 +43,22 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Canal*</label>
     <div class="col-md-6">
-      <input type="text" name="phone"  class="form-control" id="name" placeholder="Canal">
+
+      <input type="text" name="canal"  class="form-control" id="name" placeholder="Canal">
+
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Turno*</label>
-    <div class="col-md-6"> 
-      <input type="text" name="phone"  class="form-control" id="name" placeholder="Turno">
+
+    <div class="col-md-6">
+      <input type="text" name="turno"  class="form-control" id="name" placeholder="Turno">
     </div>
   </div>
+
 <h2>Datos de Apoderado</h2>
+
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre completo*</label>

@@ -24,6 +24,8 @@ create table person(
 	email varchar(255) not null,
 	address varchar(60) not null,
 	phone varchar(60) not null,
+	canal varchar(60) not null,
+	turno varchar(60) not null,
 	c1_fullname varchar(100),
 	c1_address varchar(100),
 	c1_phone varchar(100),
