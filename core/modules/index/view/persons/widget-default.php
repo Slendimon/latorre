@@ -27,7 +27,7 @@ $alumns = PersonData::getAll();
 				<tr>
 				<td><?php echo $alumn->name." ".$alumn->lastname; ?></td>
 				<td style="width:160px;">
-				 <a href="index.php?view=editperson&id=<?php echo $alumn->id;?>" class="btn btn-warning btn-xs">Editar</a> <a href="index.php?action=delperson&id=<?php echo $alumn->id;?>&tid=<?php echo $team->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
+				 <a href="index.php?view=editperson&id=<?php echo $alumn->id;?>" class="btn btn-warning btn-xs">Editar</a> <a href="index.php?action=delperson&id=<?php echo $alumn->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
 				</tr>
 				<?php
 
