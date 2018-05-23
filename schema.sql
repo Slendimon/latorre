@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 create database assistlist;
 use assistlist; 
+=======
+create database latorre;
+use latorre; 
+>>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
 
 create table user (
 	id int not null auto_increment primary key,
@@ -51,4 +56,15 @@ create table assistance(
 	foreign key (person_id) references person(id)
 );
 
+<<<<<<< HEAD
+=======
+create table DocExcel(
+	Id int not null,
+	Nombre varchar(50) not null,
+	Horario date not null,
+	Estado varchar(10) not null,
+	NvoEstado varchar(20) not null,
+	Excepcion varchar(30) not null
+);
+>>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
 

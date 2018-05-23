@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1,.0, minimum-scale=1.0">
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
     <meta name="description" content="">
     <meta name="author" content="">
     <title>.: Academia La Torre :.</title>
@@ -13,10 +17,14 @@
     <!-- Add custom CSS here -->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="shake.css.css">
     <link href='https://fonts.googleapis.com/css?family=0swald:400,300,700' rel='stylesheet'>
     <script src="js/jquery-1.10.2.js"></script>
 
+=======
+    <script src="js/jquery-1.10.2.js"></script>
+>>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
 <?php if(isset($_GET["view"]) && $_GET["view"]=="home"):?>
 <link href='res/fullcalendar.min.css' rel='stylesheet' />
 <link href='res/fullcalendar.print.css' rel='stylesheet' media='print' />
@@ -26,7 +34,11 @@
 
   </head>
 
+<<<<<<< HEAD
   <body style="background-color:#00808B">
+=======
+  <body>
+>>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
 
     <div id="wrapper">
 
@@ -62,6 +74,7 @@ if(Session::getUID()!=""):
           <li><a href="index.php?view=list"><i class="fa fa-table"></i> Reporte</a></li>
           <?php if($u->is_admin):?>
           <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
+<<<<<<< HEAD
           <li>
             <br />
             <br />
@@ -100,6 +113,8 @@ if(Session::getUID()!=""):
           </div>
         
           </li>
+=======
+>>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
         <?php endif;?>
 
 
@@ -155,8 +170,11 @@ if(Session::getUID()!=""){
     <!-- JavaScript -->
 
 <script src="res/bootstrap3/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 <script src="shake.js"></script>
 
+=======
+>>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
 
   </body>
 </html>
