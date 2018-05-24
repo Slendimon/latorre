@@ -1,6 +1,6 @@
 <?php
 /**
-* @author evilnapsis
+* @author El_Peluca_Sape
 * @brief Libera la bestia ...
 **/
 

@@ -7,10 +7,10 @@
 		/*
 		$u = new UserData();
 		print_r($u);
-		$u->name = "Agustin";
-		$u->lastname = "Ramos";
-		$u->email = "evilnapsis@gmail.com";
-		$u->password = sha1(md5("l00lapal00za"));
+		$u->name = "Peluca";
+		$u->lastname = "Sape";
+		$u->email = "ElPelucaSape@gmail.com";
+		$u->password = sha1(md5("Pëluca"));
 		$u->add();
 
 

@@ -1,7 +1,6 @@
 <?php
 
 
-// 13 de Octubre del 2014
 // Request.php
 // @brief esto es algo mucho mas magico
 

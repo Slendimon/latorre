@@ -1,7 +1,6 @@
 <?php
 
 
-// 13 de Abril del 2014
 // View.php
 // @brief Una vista corresponde a cada componente visual dentro de un modulo.
 
