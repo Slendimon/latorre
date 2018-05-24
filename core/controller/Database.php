@@ -3,11 +3,10 @@ class Database {
 	public static $db;
 	public static $con;
 	function Database(){
-<<<<<<< HEAD
-		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="assistlist";
-=======
+
 		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="latorre";
->>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
+
+		
 	}
 
 	function connect(){
