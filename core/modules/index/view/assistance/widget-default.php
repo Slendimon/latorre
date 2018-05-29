@@ -20,9 +20,27 @@
 	<p class="alert alert-warning">No hay datos, por favor selecciona una fecha.</p>
 </div>
 
-	</div>
+	
+
+<link rel="stylesheet" href="core\modules\index\view\assistance\estilos.css">
+<div class="form-group">
+	<form name = "enviar_archivo_frm"  method = "post"  action = "core\modules\index\view\assistance\subir-archivo.php" enctype = "multipart/form-data">
+		<div  id="estilo-foto" class="glyphicon glyphicon-download-alt "> Buscar	
+			<input  type = "file"  name = "archivo_fls" id="foto">
+		</div>
+		<input  type = "submit"  name = "subir_btn"  value = "Subir Archivo" class="btn btn-primary ">	
+	</form>
 </div>
 
+
+<div class="form-group">
+	<iframe width="1000" height="500" scr="subir-archivo.php"></iframe>
+</div>
+
+
+
+</div>
+</div>
 <script>
 	$("#loadlist").submit(function(e){
 		e.preventDefault();
@@ -34,3 +52,4 @@
 		});
 	});
 </script>
+

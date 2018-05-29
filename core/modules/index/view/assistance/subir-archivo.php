@@ -1,9 +1,33 @@
 <?php
-	require 'Classes/PHPExcel/IOFactory.php'; //Agregamos la librería 
-	require 'conexion.php'; //Agregamos la conexión
+
+require '../../../../../Classes/PHPExcel/IOFactory.php'; //Agregamos la librería 
+require '../../../../../conexion.php'; //Agregamos la conexión
+	foreach($_FILES["archivo_fls"] as $clave => $valor){
+		echo "Propiedad: $clave --- Valor: $valor<br/>";
+	}
+	$archivo = (isset($_FILES["archivo_fls"])) ? $_FILES["archivo_fls"] : null;
+    $destino = "Documentos/{$archivo['name']}";
+ 
+		
+
+    
+    if ($archivo) {
+        $extension = pathinfo($archivo["name"], PATHINFO_EXTENSION);
+        $extension = strtolower($extension);
+        $extension_correcta = ($extension == 'xlsx');
+       if ($extension_correcta) {
+          
+          $archivo_ok = move_uploaded_file($archivo["tmp_name"], $destino);
+          echo "Archivo subido";
+       }else{
+		echo "Solo se admiten archivos de EXCEL<br /><a href=\"enviar-archivo.php\">REGRESAR</a>";
+        }   
+    }
+
+    
 	
 	//Variable con el nombre del archivo
-	$nombreArchivo = 'asistencia.xlsx';
+	$nombreArchivo = 'Documentos/asistencias.xlsx';
 	// Cargo la hoja de cálculo
 	$objPHPExcel = PHPExcel_IOFactory::load($nombreArchivo);
 	
@@ -38,4 +62,11 @@
 	}
 	
 	echo '<table>';
+
+
+
+
+
+
+
 ?>
