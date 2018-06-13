@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-create database assistlist;
-use assistlist; 
-=======
+
 create database latorre;
 use latorre; 
->>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
+
 
 create table user (
 	id int not null auto_increment primary key,
@@ -23,14 +20,14 @@ insert into user (username,password,is_admin,created_at) value ("admin",sha1(md5
 
 create table person(
 	id int not null auto_increment primary key,
-	image varchar(50) not null,
+	image varchar(50),
 	name varchar(50) not null,
-	lastname varchar(50) not null,
-	email varchar(255) not null,
-	address varchar(60) not null,
-	phone varchar(60) not null,
-	canal varchar(60) not null,
-	turno varchar(60) not null,
+	lastname varchar(50),
+	email varchar(255),
+	address varchar(60),
+	phone varchar(60),
+	canal varchar(60) ,
+	turno varchar(60) ,
 	c1_fullname varchar(100),
 	c1_address varchar(100),
 	c1_phone varchar(100),
@@ -56,15 +53,15 @@ create table assistance(
 	foreign key (person_id) references person(id)
 );
 
-<<<<<<< HEAD
-=======
+
 create table DocExcel(
-	Id int not null,
+	Id int not null primary key,
 	Nombre varchar(50) not null,
-	Horario date not null,
+	Horario varchar(20) not null,
 	Estado varchar(10) not null,
 	NvoEstado varchar(20) not null,
 	Excepcion varchar(30) not null
 );
->>>>>>> 263a06cfd15139f8c73549f3a01eb19dcab8d141
+CREATE TRIGGER `nuevosalum` AFTER INSERT ON `docexcel`
+ FOR EACH ROW INSERT INTO person(id, name, user_id) VALUES (NEW.Id, NEW.Nombre, 1);
 

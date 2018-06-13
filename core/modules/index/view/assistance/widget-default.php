@@ -21,7 +21,7 @@
 </div>
 
 	
-
+<p>EXPORTAR ARCHIVO DE ASISTENCIAS EXTERNO</P>
 <link rel="stylesheet" href="core\modules\index\view\assistance\estilos.css">
 <div class="form-group">
 	<form name = "enviar_archivo_frm"  method = "post"  action = "core\modules\index\view\assistance\subir-archivo.php" enctype = "multipart/form-data">

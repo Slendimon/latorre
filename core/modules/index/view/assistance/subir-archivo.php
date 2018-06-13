@@ -2,14 +2,13 @@
 
 require '../../../../../Classes/PHPExcel/IOFactory.php'; //Agregamos la librería 
 require '../../../../../conexion.php'; //Agregamos la conexión
-	foreach($_FILES["archivo_fls"] as $clave => $valor){
+
+foreach($_FILES["archivo_fls"] as $clave => $valor){
 		echo "Propiedad: $clave --- Valor: $valor<br/>";
 	}
 	$archivo = (isset($_FILES["archivo_fls"])) ? $_FILES["archivo_fls"] : null;
-    $destino = "Documentos/{$archivo['name']}";
+    $destino = "../../../../../Documentos/asistencias.xlsx";
  
-		
-
     
     if ($archivo) {
         $extension = pathinfo($archivo["name"], PATHINFO_EXTENSION);
@@ -18,14 +17,14 @@ require '../../../../../conexion.php'; //Agregamos la conexión
        if ($extension_correcta) {
           
           $archivo_ok = move_uploaded_file($archivo["tmp_name"], $destino);
-          echo "Archivo subido";
+          echo "Archivo subido exitosamente";
        }else{
 		echo "Solo se admiten archivos de EXCEL<br /><a href=\"enviar-archivo.php\">REGRESAR</a>";
         }   
     }
 
     
-	
+	$sql = "TRUNCATE TABLE docexcel";
 	//Variable con el nombre del archivo
 	$nombreArchivo = 'Documentos/asistencias.xlsx';
 	// Cargo la hoja de cálculo
@@ -36,6 +35,7 @@ require '../../../../../conexion.php'; //Agregamos la conexión
 	//Obtengo el numero de filas del archivo
 	$numRows = $objPHPExcel->setActiveSheetIndex(0)->getHighestRow();
 	
+
 	echo '<table border=1><tr><td>AC-No.</td><td>Nombre</td><td>Horario</td><td>Estado</td><td>NvoEstado</td><td>Excepción</td></tr>';
 	
 	for ($i = 2; $i <= $numRows; $i++) {
@@ -57,7 +57,7 @@ require '../../../../../conexion.php'; //Agregamos la conexión
         echo '<td>'. $Excepcion.'</td>';
 		echo '</tr>';
 		
-		$sql = "INSERT INTO docexcel (Id, Nombre, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Estado','$NvoEstado','$Excepcion' )";
+		$sql = "INSERT INTO docexcel (Id, Nombre, Horario, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Horario','$Estado','$NvoEstado','$Excepcion' )";
 		$result = $mysqli->query($sql);
 	}
 	
