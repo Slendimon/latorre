@@ -20,7 +20,10 @@
 
     <link rel="stylesheet" href="shake.css.css">
     <link href='https://fonts.googleapis.com/css?family=0swald:400,300,700' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
+
+
 
 
     <script src="js/jquery-1.10.2.js"></script>
@@ -52,7 +55,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./">La Torre</a>
+          <a class="navbar-brand" href="./">Academia Pre Universitaria La Torre</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,8 +90,7 @@ if(Session::getUID()!=""):
             <br />
             
             <br />
-            <br />
-            <br />
+            
 
           <div class="widget">
             <div class="fecha">
