@@ -57,7 +57,13 @@ foreach($_FILES["archivo_fls"] as $clave => $valor){
         echo '<td>'. $Excepcion.'</td>';
 		echo '</tr>';
 		
-		$sql = "INSERT INTO docexcel (Id, Nombre, Horario, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Horario','$Estado','$NvoEstado','$Excepcion' )";
+
+		$Apellido="";
+		list($Nomb, $Apellido1, $Apellido2) =  array_pad(explode(" ",$Nombre, 3),3,null);
+		$Nombre=$Nomb;
+	    $Apellido=$Apellido1 . " " . $Apellido2;
+
+		$sql = "INSERT INTO docexcel (Id, Nombre, Apellido, Horario, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Apellido','$Horario','$Estado','$NvoEstado','$Excepcion' )";
 		$result = $mysqli->query($sql);
 	}
 	

@@ -57,11 +57,12 @@ create table assistance(
 create table DocExcel(
 	Id int not null primary key,
 	Nombre varchar(50) not null,
+	Apellido varchar(50) not null,
 	Horario varchar(20) not null,
 	Estado varchar(10) not null,
 	NvoEstado varchar(20) not null,
 	Excepcion varchar(30) not null
 );
-CREATE TRIGGER `nuevosalum` AFTER INSERT ON `docexcel`
- FOR EACH ROW INSERT INTO person(id, name, user_id) VALUES (NEW.Id, NEW.Nombre, 1);
+ CREATE TRIGGER `nuevosalum` AFTER INSERT ON `docexcel`
+ FOR EACH ROW INSERT INTO person(id, name, lastname,user_id) VALUES (NEW.Id, NEW.Nombre, NEW.Apellido, 1)
 
