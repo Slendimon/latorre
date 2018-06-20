@@ -26,7 +26,7 @@
 
 
 
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/validar.js"></script>
 
 <?php if(isset($_GET["view"]) && $_GET["view"]=="home"):?>
 <link href='res/fullcalendar.min.css' rel='stylesheet' />
@@ -85,11 +85,8 @@ if(Session::getUID()!=""):
             <br />
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+           <br />
             
-            <br />
             
 
           <div class="widget">

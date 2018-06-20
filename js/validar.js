@@ -5,6 +5,7 @@ var Expresion3 = /^[\w]+@{1}[\w]+\.[a-z]{2,3}$/;
 var Expresion4 = /^(9[\d]{8})|[\d]{6}$/;
 
 function ValidarInput(){
+    var contador=0;
     var incorrecto = false;
     var obligatorio = "Campo obligatirio";
     var nombre = document.getElementById("nombre").value;
@@ -30,15 +31,19 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="El nombre no es valido";
+                contador++;
             break;
             case -1:
                 mensaje1=obligatorio;
+                contador++;
             break;
             default:
                 mensaje1="";
@@ -51,18 +56,23 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="El apellido no es valido";
+                contador++;
             break;
             case -1:
                 mensaje1=obligatorio;
+                contador++;
             break;
             default:
                 mensaje1="";
+                
             break;
         }
         CambiarMensaje(mensaje1,span1);
@@ -73,18 +83,23 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="El dato no es valido";
+                contador++;
             break;
             case -1:
                 mensaje1=obligatorio;
+                contador++;
             break;
             default:
                 mensaje1="";
+                
             break;
         }
         CambiarMensaje(mensaje1,span1);
@@ -94,12 +109,15 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El email es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="No tiene el formato correcto";
+                contador++;
             break;
             default:
                 mensaje1="";
@@ -112,18 +130,23 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="El telefono es invalido ";
+                contador++;
             break;
             case -1:
                 mensaje1=obligatorio;
+                contador++;
             break;
             default:
                 mensaje1="";
+                
             break;
         }
         CambiarMensaje(mensaje1,span1);
@@ -133,12 +156,15 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="El nombre no es valido";
+                contador++;
             break;
             default:
                 mensaje1="";
@@ -151,12 +177,15 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="El dato no es valido";
+                contador++;
             break;
             default:
                 mensaje1="";
@@ -170,21 +199,29 @@ function ValidarInput(){
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
+                contador++;
             break;            
             case 2:
                 mensaje1="El Contenido es muy corto";
+                contador++;
             break;
             case 3:
                 mensaje1="El telefono es invalido ";
+                contador++;
             break;
             case -1:
                 mensaje1=obligatorio;
+                contador++;
             break;
             default:
                 mensaje1="";
+                
             break;
         }
-        return false;
+        if(contador==0)
+           return true;
+        else
+           return false; 
    /* }
     return false;*/
 }

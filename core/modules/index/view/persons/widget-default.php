@@ -3,8 +3,8 @@ $alumns = PersonData::getAll();
 ?>
 <div class="row">
 	<div class="col-md-12">
-		<h1>Personas </h1>
-	<a href="index.php?view=newperson" class="btn btn-default"><i class='fa fa-asterisk'></i> Nueva persona</a>
+		<h1>Alumnos </h1>
+	<a href="index.php?view=newperson" class="btn btn-default"><i class='fa fa-asterisk'></i> Nuevo Alumno</a>
 
 
 
@@ -36,7 +36,7 @@ $alumns = PersonData::getAll();
 echo "</table>";
 
 		}else{
-			echo "<p class='alert alert-danger'>No hay Personas</p>";
+			echo "<p class='alert alert-danger'>No hay Alumnos registrados</p>";
 		}
 
 
