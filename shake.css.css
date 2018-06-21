@@ -100,7 +100,15 @@ body {
 }
 
 h2{
-	font-size:70px;
+	font-size:50px;
+	font-family: 'Farsan', cursive;
+}
+
+h4{
+	font-size:50px;
+	font-family: 'Farsan', cursive;
+	color:#000000;
+	text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 

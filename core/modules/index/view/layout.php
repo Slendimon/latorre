@@ -84,8 +84,6 @@ if(Session::getUID()!=""):
             <br />
             <br />
             <br />
-            <br />
-           <br />
             
             
 
