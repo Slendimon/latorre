@@ -6,7 +6,6 @@ var Expresion4 = /^(9[\d]{8})|[\d]{6}$/;
 
 function ValidarInput(){
     var contador=0;
-    var incorrecto = false;
     var obligatorio = "Campo obligatirio";
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
@@ -79,7 +78,6 @@ function ValidarInput(){
         var valor1 = ValidarExpresion(domicilio,Expresion2,50);
         var mensaje1="";
         var span1 = document.getElementById("Sdomicilio");
-        console.log(valor1);
         switch(valor1){
             case 1:
                 mensaje1="El Contenido es muy extenso";
@@ -150,6 +148,33 @@ function ValidarInput(){
             break;
         }
         CambiarMensaje(mensaje1,span1);
+        var valor1=0;
+        if(canal==0){
+            valor1=valor1+1;
+        }
+        if(turno==0){
+            valor1=valor1+2;
+        }
+        var mensaje1="";
+        var span1 = document.getElementById("Scanalturno");
+        switch(valor1){
+            case 1:
+                mensaje1="Seleccione el Canal";
+                contador++;
+            break;            
+            case 2:
+                mensaje1="Seleccione el Turno";
+                contador++;
+            break;
+            case 3:
+                mensaje1="Campos obligatorios";
+                contador++;
+            break;
+            default:
+                mensaje1="";
+            break;
+        }
+        CambiarMensaje(mensaje1,span1);
         var valor1 = ValidarExpresion(c1_nombre,Expresion1,50);
         var mensaje1="";
         var span1 = document.getElementById("Sc1_nombre");
@@ -192,8 +217,7 @@ function ValidarInput(){
             break;
         }
         CambiarMensaje(mensaje1,span1);
-        return false;
-        var valor1 = ValidarExpresion(c1_telefeno,Expresion4,9);
+        var valor1 = ValidarExpresion(c1_telefono,Expresion4,9);
         var mensaje1="";
         var span1 = document.getElementById("Sc1_telefono");
         switch(valor1){
@@ -209,19 +233,14 @@ function ValidarInput(){
                 mensaje1="El telefono es invalido ";
                 contador++;
             break;
-            case -1:
-                mensaje1=obligatorio;
-                contador++;
-            break;
             default:
                 mensaje1="";
                 
             break;
         }
-        if(contador==0)
-           return true;
-        else
-           return false; 
+        console.log(contador);
+        if(contador==0){return true;}           
+        else{return false;}           
    /* }
     return false;*/
 }

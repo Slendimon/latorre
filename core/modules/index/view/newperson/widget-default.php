@@ -75,6 +75,9 @@
         <option value="4">Canal 4</option>
       </select>   
     </div>
+    <div class="col-md-3">
+      <span id="Scanalturno" class="control-label"></span>
+    </div>
   </div>
 
   <div class="h1">Datos de Apoderado</div>
