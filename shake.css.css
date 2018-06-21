@@ -91,24 +91,34 @@ body {
 	background:url(bg.jpg) #F0F0F0;
 	background-size:cover;
 	color:#fff;
-	font-size: 27px;
-	font-family: 'Farsan', cursive;
+	font-size: 24px;
+	font-family: 'Crimson Text', serif;
 }
 
 .navbar-brand{
 	font-size:30px;
 }
 
+@font-face{
+	font-family:'Crimson';
+	src:url(fonts/Crimson.eot),url(fonts/Crimson.ttf),url(fonts/Crimson.otf);
+}
+
+
 h2{
 	font-size:50px;
-	font-family: 'Farsan', cursive;
+	font-family: 'Crimson';
 }
 
 h4{
-	font-size:50px;
+	font-size:30px;
 	font-family: 'Farsan', cursive;
 	color:#000000;
-	text-shadow: 0.1em 0.1em 0.2em black;
+	text-shadow: 0.08em  black;
+}
+
+.peque{
+	font-size:19px;
 }
 
 
@@ -122,6 +132,9 @@ h4{
 .widget {
 	width: 92%;
 	margin: 8px;
+	line-height:0.5;
+	border: solid white;
+
 	/*margin:32px; */
 }
 
@@ -149,6 +162,8 @@ h4{
 	font-size: 36px;
 	text-align: center;
 	background: rgba(0,0,0,.5);
+	line-height:0.5;
+	border: white;
 }
 
 .reloj .caja-segundos {

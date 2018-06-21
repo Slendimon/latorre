@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="shake.css.css">
     <link href='https://fonts.googleapis.com/css?family=0swald:400,300,700' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
 
 
@@ -71,12 +71,13 @@ $u=null;
 if(Session::getUID()!=""):
   $u = UserData::getById(Session::getUID());
 ?>
-          <li><a href="index.php?view=home"><i class="fa fa-home"></i> Inicio</a></li>
-          <li><a href="index.php?view=assistance"><i class="fa fa-check"></i> Asistencia</a></li>
-          <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Alumnos</a></li>
-          <li><a href="index.php?view=list"><i class="fa fa-table"></i> Reporte</a></li>
+          <br />
+          <li><a href="index.php?view=home"><i class="fa fa-home"></i>  Inicio</a></li>
+          <li><a  href="index.php?view=assistance"><i class="fa fa-check" align="center"></i>Asistencia</a></li>
+          <li><a  href="index.php?view=persons"><i class="fa fa-male"></i>  Alumnos</a></li>
+          <li><a  href="index.php?view=list"><i class="fa fa-table"></i>  Reporte</a></li>
           <?php if($u->is_admin):?>
-          <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
+          <li><a  href="index.php?view=users"><i class="fa fa-users"></i>  Usuarios </a></li>
 
           <li>
             <br />
@@ -84,27 +85,28 @@ if(Session::getUID()!=""):
             <br />
             <br />
             <br />
-            
+            <br />
+            <br />
             
 
           <div class="widget">
             <div class="fecha">
-              <p id="diaSemana" class="diaSemana">Martes</p>
-              <p id="dia" class="dia">27</p>
-              <p class="dia">de </p>
-              <p id="mes" class="mes">Octubre</p>
+              <p id="diaSemana" class="diaSemana">     </p>
+              <p id="dia" class="dia">     </p>
+              <p class="dia">     </p>
+              <p id="mes" class="mes">   </p>
               
-              <p id="year" class="year">2015</p>
+              <p id="year" class="year"></p>
             </div>
         
             <div class="reloj">
-              <p id="horas" class="horas">11</p>
+              <p id="horas" class="horas"></p>
               <p class="horas">:</p>
-              <p id="minutos" class="minutos">48</p>
+              <p id="minutos" class="minutos"></p>
               <p class="minutos">:</p>
               <div class="caja-segundos">
-                <p id="ampm" class="ampm">AM</p>
-                <p id="segundos" class="segundos">12</p>
+                <p id="ampm" class="ampm"></p>
+                <p id="segundos" class="segundos"></p>
               </div>
             </div>
           </div>
@@ -158,7 +160,7 @@ if(Session::getUID()!=""){
 ?>
 
 <hr>
-<p>Copyright 2018 - La Torre</p>
+<p class="peque">Copyright 2018 - La Torre</p>
 
       </div><!-- /#page-wrapper -->
 

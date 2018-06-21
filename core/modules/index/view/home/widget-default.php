@@ -4,10 +4,9 @@
 
 <div class="row">
 	<div class="col-md-12">
-
 	<h1>Inicio</h1>
 	<p>Bienvenido al Sistema de Gestión de Alumnos de la Academia La Torre.</p>
-	<p>───────────────────────────────────────────────────────────────────────────────────────────────────</p>
+	<p>──────────────────────────────────────────────────────────────────────────</p>
 	</div>
 	<div class="container">
 	<div class="col-md-12">
