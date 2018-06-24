@@ -58,19 +58,15 @@ $alumn = PersonData::getById($_GET["id"]);
     </div>
   </div>
 
-  <script>console.log(<?php echo $alumn->turno; ?>)</script>
-
   <div class="form-group">  
     <label for="turno" class="control-label col-md-2">Turno*</label>
     <div class="col-md-2">
-      <select name="turno"class="form-control" id="turno" selected="<?php echo $alumn->turno; ?>">
+      <select name="turno"class="form-control" id="turno">
         <option value="0">Sin asignar</option>
         <option value="1">Manaña</option>
         <option value="2">Tarde</option>
       </select>   
     </div>
-
-     <script>console.log(<?php echo $alumn->canal; ?>)</script>    
 
     <label for="canal" class="col-md-1 control-label">Canal*</label>
     <div class="col-md-2">
@@ -80,12 +76,21 @@ $alumn = PersonData::getById($_GET["id"]);
         <option value="2">Canal 2</option>
         <option value="3">Canal 3</option>
         <option value="4">Canal 4</option>
+        <script>
+              document.ready = document.getElementById("canal").value =<?php echo $alumn->canal; ?>;
+              document.ready = document.getElementById("turno").value = <?php echo $alumn->turno; ?>;
+        </script>
       </select>   
     </div>
     <div class="col-md-3">
       <span id="Scanalturno" class="control-label"></span>
     </div>
   </div>
+
+  <script>
+    document.ready = document.getElementById("canal").value =<?php echo $alumn->canal; ?>;
+    document.ready = document.getElementById("turno").value = <?php echo $alumn->turno; ?>;
+  </script>
 
   <div class="h1">Datos de Apoderado</div>
   <br>

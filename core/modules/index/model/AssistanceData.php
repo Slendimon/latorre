@@ -26,6 +26,13 @@ class AssistanceData {
 		Executor::doit($sql);
 	}
 
+	public static function Alertas(){
+		$sql = "select count(kind_id) as faltas,person_id from ".self::$tablename." where kind_id=2 group by person_id ";
+		$query = Executor::doit($sql);
+		return Model::many($query[0],new AssistanceData());
+	}
+
+
 // partiendo de que ya tenemos creado un objecto AssistanceData previamente utilizamos el contexto
 	public function update(){
 		$sql = "update ".self::$tablename." set kind_id=\"$this->kind_id\" where id=$this->id";
