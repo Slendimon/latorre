@@ -47,6 +47,7 @@ create table assistance(
 	id int not null auto_increment primary key,
 	kind_id int,
 	date_at date not null,
+	hour_at time not null,
 	person_id int not null,
 	user_id int not null,
 	foreign key (user_id) references user(id),
@@ -64,5 +65,14 @@ create table DocExcel(
 	Excepcion varchar(30) not null
 );
  CREATE TRIGGER `nuevosalum` AFTER INSERT ON `docexcel`
- FOR EACH ROW INSERT INTO person(id, name, lastname,user_id) VALUES (NEW.Id, NEW.Nombre, NEW.Apellido, 1)
+ FOR EACH ROW INSERT INTO person(id, name, lastname,user_id) VALUES (NEW.Id, NEW.Nombre, NEW.Apellido, 1);
+
+
+ CREATE TABLE horario_torre(
+  id_h int(11) NOT NULL auto_increment primary key,
+  hora_entr time NOT NULL,
+  hora_sal time NOT NULL
+ );
+ INSERT INTO `horario_torre` (`id_h`, `hora_entr`, `hora_sal`) VALUES
+(1, '07:00:00', '18:00:00');
 

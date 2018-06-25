@@ -60,8 +60,31 @@ require '../../../../../conexion.php'; //Agregamos la conexión
 	    $Apellido=$Apellido1 . " " . $Apellido2;
 
 		$sql = "INSERT INTO docexcel (Id, Nombre, Apellido, Horario, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Apellido','$Horario','$Estado','$NvoEstado','$Excepcion' )";
-		$result = $mysqli->query($sql);
+		$mysqli->query($sql);
+
+
+		//insertando a otra tabla las fechas......
+		$fech=date("d/m/Y", strtotime($Horario));
+		$hor=date("H:i", strtotime($Horario));
+		
+		//extrayendo horario de otra tabla...
+		$hora1= strtotime($hor);
+		$hora2m= strtotime('07:00');
+		$hora2t_1= strtotime('16:30');
+		$hora2t_2= strtotime('17:00');
+		
+		if('Repetido'!== $Excepcion)
+		{
+			if( ($hora1 <= $hora2m ) || ($hora1 >= $hora2t_1 && $hora1 <= $hora2t_2 ) || 'Horas extraordinarias en libertad' === $Excepcion)
+			{
+				$sql = "INSERT INTO assistance(id, kind_id, date_at, hour_at, person_id, user_id) VALUES(NULL, 1,STR_TO_DATE('$fech', '%d/%m/%Y'), STR_TO_DATE('$hor', '%H:%i'),$Id, 1)";			
+			}else{
+				$sql = "INSERT INTO assistance(id, kind_id, date_at, hour_at, person_id, user_id) VALUES(NULL, 3,STR_TO_DATE('$fech', '%d/%m/%Y'), STR_TO_DATE('$hor', '%H:%i'),$Id, 1)";
+			}$mysqli->query($sql);
+		}
 	}
+
+	
 	/*
 	echo '<table>';*/
 	$sql = "TRUNCATE TABLE docexcel";
