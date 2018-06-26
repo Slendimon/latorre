@@ -28,6 +28,7 @@ create table person(
 	phone varchar(60),
 	canal varchar(60) ,
 	turno varchar(60) ,
+	tipo_person int not null,
 	c1_fullname varchar(100),
 	c1_address varchar(100),
 	c1_phone varchar(100),
