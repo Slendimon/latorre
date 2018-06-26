@@ -17,6 +17,7 @@
 }*/
 
 
+
 #btnCheck
 {
 	background: #2FAA96;
@@ -95,6 +96,10 @@ body {
 	font-family: 'Crimson Text', serif;
 }
 
+.table-bordered{
+	color:#000000;
+}
+
 .navbar-brand{
 	font-size:30px;
 }
@@ -159,7 +164,7 @@ h4{
 	width: 100%;
 	padding: 10px;
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 35px;
 	text-align: center;
 	background: rgba(0,0,0,.5);
 	line-height:0.5;
