@@ -60,6 +60,7 @@
 	border-color:#C00;
 }
 
+
 @keyframes shakeIt{
 	0%{transform:translateX(-15px);}
 	25%{transform:translateX(15px);}
