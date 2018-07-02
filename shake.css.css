@@ -15,8 +15,11 @@
 	padding:158px;
 	text-align:center;
 }*/
-
-
+.fa-sort-up
+{
+	font-size:27px;
+	margin-top:10px;
+}
 
 #btnCheck
 {
@@ -60,6 +63,34 @@
 	border-color:#C00;
 }
 
+.sub-menu{
+	margin-left: 20px;
+	font-size:22px;
+}
+
+.navbar-brand{
+	float:right;
+}
+
+.navbar-header{
+	margin-top:5px;
+}
+
+.title,.title:link,.title:hover
+{
+	color:#fff;
+	font-size:30px;
+	text-decoration:none;
+	float:right;
+	margin-left:10px;
+	margin-right:5px;
+}
+
+.towel,.towel:link
+{
+	text-decoration: none;
+	
+}
 
 @keyframes shakeIt{
 	0%{transform:translateX(-15px);}
@@ -136,7 +167,7 @@ h4{
 }
 
 .widget {
-	width: 92%;
+	width: 100%;
 	margin: 8px;
 	line-height:0.5;
 	border: solid white;
@@ -165,7 +196,7 @@ h4{
 	width: 100%;
 	padding: 10px;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 32px;
 	text-align: center;
 	background: rgba(0,0,0,.5);
 	line-height:0.5;

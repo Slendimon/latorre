@@ -48,19 +48,22 @@
       <!-- Sidebar -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
+        
         <div class="navbar-header">
+
+          <a class="title" href="./"> <img style="float:left" src="mini-logo.png" width="44px" height="43px"></img>Academia Pre Universitaria La Torre</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./">Academia Pre Universitaria La Torre</a>
+          
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav side-nav">
+          <ul class="nav navbar-nav side-nav menu">
          <ul class="nav navbar-nav">
           </ul>
 <?php if(!isset($_SESSION["user_id"])):?>
@@ -72,22 +75,23 @@ if(Session::getUID()!=""):
   $u = UserData::getById(Session::getUID());
 ?>
           <br />
-          <li><a href="index.php?view=home"><i class="fa fa-home"></i>  Inicio</a></li>
-          <li><a  href="index.php?view=assistance"><i class="fa fa-check" align="center"></i>Asistencia</a></li>
-          <li><a  href="index.php?view=persons"><i class="fa fa-male"></i>  Alumnos</a></li>
-          <li><a href="index.php?view=personal"><i class="fa fa-male"></i> Personal</a></li>
-          <li><a  href="index.php?view=list"><i class="fa fa-table"></i>  Reporte</a></li>
-          <?php if($u->is_admin):?>
-          <li><a  href="index.php?view=users"><i class="fa fa-users"></i>  Usuarios </a></li>
 
-          <li>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            
+          <li><a href="index.php?view=home"><i class="fa fa-home" style="margin-right: 4px; font-size:30px;"></i>  Inicio</a></li>
+          <li><a  href="index.php?view=assistance"><i class="fa fa-check-square-o" align="center" style="margin-right: 14px;font-size:30px;"></i>Asistencia</a></li>
+          <li><a  href="index.php?view=persons"><i class="fa fa-graduation-cap" style="font-size:27px; margin-right: 3px"></i>  Alumnos</a></li>
+          <li><a href="index.php?view=personal"><i class="fa fa-male" style="margin-right: 15px; margin-left: 7px;font-size:32px"></i> Personal</a></li>
+          <li><a  href="index.php?view=list"><i class="fa fa-table" style="margin-right: 12px; font-size:29px"></i>  Reporte<i class="fa fa-sort-down up" style="float:right; margin-right:15px;"></i> </a>
+            <ul class="nav navbar-nav sub-menu" style="display:none" >
+              <li><a href="index.php?view=home" ><ul class="fa fa-graduation-cap" style="margin-right: 8px" ></ul>Alumno</a></li>
+               <li><a href="index.php?view=home" ><ul class="fa fa-server" style="margin-right: 12px; font-size:22px"></ul>Canal</a></li>
+                <li><a href="index.php?view=home" ><ul class="fa fa-male" style="margin-right: 18px; font-size:29px"></ul>Personal</a></li>
+            </ul>
+          </li>
+          <?php if($u->is_admin):?>
+          <li><a  href="index.php?view=users"><i class="fa fa-users" style="margin-right: 9px; font-size:29px"></i>  Usuarios </a></li>
+
+          <li style=" margin-top:226%; position:absolute;">
+                
             
 
           <div class="widget">
@@ -111,6 +115,7 @@ if(Session::getUID()!=""):
               </div>
             </div>
           </div>
+      
         
           </li>
 
@@ -172,6 +177,7 @@ if(Session::getUID()!=""){
 <script src="res/bootstrap3/js/bootstrap.min.js"></script>
 
 <script src="shake.js"></script>
+<script src="main.js"></script>
 
 
 
