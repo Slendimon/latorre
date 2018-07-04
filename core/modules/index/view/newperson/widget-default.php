@@ -46,6 +46,16 @@
   </div>
 
   <div class="form-group">
+    <label for="dni" class="control-label col-md-2">DNI</label>
+    <div class="col-md-5">
+      <input type="text" name="dni"  class="form-control" id="dni" placeholder="DNI" autocomplete="off">
+    </div>
+    <div class="col-md-3">
+      <span id="Sdni" class="control-label"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
     <label for="telefono" class="control-label col-md-2">Telefono*</label>
     <div class="col-md-5">
       <input type="text" name="phone"  class="form-control" id="telefono" placeholder="Telefono" autocomplete="off">
