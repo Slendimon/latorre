@@ -31,6 +31,12 @@ class AssistanceData {
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new AssistanceData());
 	}
+	
+	public static function Report($valor,$id){
+		$sql = "SELECT person_id,COUNT(kind_id) as valor from ".self::$tablename." WHERE person_id=$id and kind_id=$valor GROUP by person_id ";
+		$query = Executor::doit($sql);
+		return Model::one($query[0],new AssistanceData());
+	}
 
 
 // partiendo de que ya tenemos creado un objecto AssistanceData previamente utilizamos el contexto

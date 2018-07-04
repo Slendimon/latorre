@@ -6,6 +6,7 @@ if(count($_POST)>0){
 	$user->lastname = $_POST["lastname"];
 	$user->address = $_POST["address"];
 	$user->email = $_POST["email"];
+	$user->dni = $_POST["dni"];
 	$user->phone = $_POST["phone"];
 	$user->canal = $_POST["canal"];
 	$user->turno = $_POST["turno"];
