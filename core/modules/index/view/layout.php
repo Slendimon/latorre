@@ -83,14 +83,18 @@ if(Session::getUID()!=""):
           <li><a  href="index.php?view=list"><i class="fa fa-table" style="margin-right: 12px; font-size:29px"></i>  Reporte<i class="fa fa-sort-down up" style="float:right; margin-right:15px;"></i> </a>
             <ul class="nav navbar-nav sub-menu" style="display:none" >
               <li><a href="index.php?view=home" ><ul class="fa fa-graduation-cap" style="margin-right: 8px" ></ul>Alumno</a></li>
+<<<<<<< HEAD
                <li><a href="index.php?view=report" ><ul class="fa fa-server" style="margin-right: 12px; font-size:22px"></ul>Canal</a></li>
+=======
+               <li><a href="index.php?view=report" ><ul class="fa fa-server" style="margin-right: 12px; font-size:22px"></ul>Canal y Turno</a></li>
+>>>>>>> 951aa81540365651f19ab784ad55b8ef48248097
                 <li><a href="index.php?view=home" ><ul class="fa fa-male" style="margin-right: 18px; font-size:29px"></ul>Personal</a></li>
             </ul>
           </li>
           <?php if($u->is_admin):?>
           <li><a  href="index.php?view=users"><i class="fa fa-users" style="margin-right: 9px; font-size:29px"></i>  Usuarios </a></li>
 
-          <li style=" margin-top:226%; position:absolute;">
+          <li style=" margin-top:228%; position:absolute;">
                 
             
 

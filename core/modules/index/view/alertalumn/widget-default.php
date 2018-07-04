@@ -18,6 +18,7 @@
 								echo ("NO HAY ALUMNOS EN LA LISTA");
 							}
 							else {
+								echo (sizeof($alumns));
 								?>
 									<tr class="success h5">
 										<th>Nombre del Alumno </th>
