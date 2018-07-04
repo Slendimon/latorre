@@ -27,6 +27,7 @@
 	text-align: center;
 	transition:all 0.1s ease;
 	font-size: "Pala";
+
 }
 
 #btnCheck:hover
@@ -69,8 +70,7 @@
 	100%{transform:translateX(0px);}
 }
 
-@font-face()
-{
+@font-face(){
 	font-family:"Pala";
 	src:url(fonts/Pala/pala.ttf),url(fonts/Pala/pala.eot),url(fonts/Pala/pala.otf);
 }

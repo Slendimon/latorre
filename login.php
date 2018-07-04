@@ -34,12 +34,9 @@ if(isset($_SESSION['user']))
 		background:white;
 	}
 
-<<<<<<< HEAD
-=======
 	
 
 
->>>>>>> 6b70253a6bd110cbe088e427242de911bfb4f789
 	.principal{
 		margin:auto auto;
 		border:3px solid #000000;
@@ -55,11 +52,7 @@ if(isset($_SESSION['user']))
 	}
 
 	body,html{
-<<<<<<< HEAD
 		background-color:#00808c;
-=======
-		background-color:#00808b;
->>>>>>> 6b70253a6bd110cbe088e427242de911bfb4f789
 		margin:0;
 		padding:0;
 		width:100%;
@@ -71,8 +64,6 @@ if(isset($_SESSION['user']))
 		color:#f00;
 	}
 
-<<<<<<< HEAD
-=======
 	.input-lg
 	{
 	width:250px;
@@ -82,7 +73,6 @@ if(isset($_SESSION['user']))
 	font-family:"Pala"; 
 	font-size:22px;
 	}
->>>>>>> 6b70253a6bd110cbe088e427242de911bfb4f789
 	
 
 </style>
@@ -109,10 +99,7 @@ if(isset($_SESSION['user']))
 	} ?>
 	<br />
 	<form method="POST" action="index2.php">
-<<<<<<< HEAD
-=======
 		<!--<action="index2.php"> -->
->>>>>>> 6b70253a6bd110cbe088e427242de911bfb4f789
 	
 	<input type="text" name="user" class="input-lg" id="username" placeholder="Usuario"/>
 	</p>
