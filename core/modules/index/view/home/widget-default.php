@@ -25,11 +25,11 @@
 	      
 	     
 	      <div class="col-md-4" align="center" 
-	        class="grid-block" style="background-image: url('canal1.jpg');  width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; display:block; margin-left: 45px;"> 
+	        class="grid-block" style="background-image: url('canal1.jpg');  width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; display:block; margin-left: 45px; border-style: solid; border-width:1px;  border-color:#000000"> 
 	      </div>
 
 	      <div class="col-md-2" align="center" class="grid-block" style="background-color:#212121;width:250px; height:110px;    max-width: 300px; min-height: 100px; min-width: 50px; ">
-	        <h2 align="center">84</h2> 
+	        <h2 align="center"style="margin-top:12px">84</h2> 
 	        <p align="center" >- Canal 1 -</p>
 	      </div>
 	    </div>  
@@ -40,11 +40,11 @@
 		
 
 	      <div class="col-md-2" align="center" 
-	         class="grid-block" style="background-image: url('canal2.jpg'); width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; margin-left: 45px;">
+	         class="grid-block" style="background-image: url('canal2.jpg'); width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; margin-left: 45px; border-style: solid; border-width:1px;  border-color:#000000">
 	      </div>
 	      
 	      <div class="col-md-3"  style="background-color:#212121; width:250px; height:110px;max-width: 300px; min-height: 100px; min-width: 10px; min-width: 50px; ">
-	        <h2 align="center">89</h2> 
+	        <h2 align="center" style="margin-top:12px">89</h2> 
 	        <p align="center">- Canal 2 -</p>
 	      </div>
 
@@ -62,11 +62,11 @@
 	      
 	     
 	      <div class="col-md-4" align="center" 
-	        class="grid-block" style="background-image: url('canal3.jpg');  width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; display:block; margin-left: 45px;"> 
+	        class="grid-block" style="background-image: url('canal3.jpg');  width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; display:block; margin-left: 45px;border-style: solid; border-width:1px;  border-color:#000000"> 
 	      </div>
 
 	      <div class="col-md-2" align="center" class="grid-block" style="background-color:#212121;width:250px; height:110px;    max-width: 300px; min-height: 100px; min-width: 50px; ">
-	        <h2 align="center">82</h2> 
+	        <h2 align="center"style="margin-top:12px">82</h2> 
 	        <p align="center" >- Canal 3 -</p>
 	      </div>
 	    </div>  
@@ -77,11 +77,11 @@
 		
 
 	      <div class="col-md-2" align="center" 
-	         class="grid-block" style="background-image: url('canal4.jpg'); width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; margin-left: 45px;">
+	         class="grid-block" style="background-image: url('canal4.jpg'); width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; margin-left: 45px;border-style: solid; border-width:1px;  border-color:#000000">
 	      </div>
 	      
 	      <div class="col-md-3"  style="background-color:#212121; width:250px; height:110px;max-width: 300px; min-height: 100px; min-width: 10px; min-width: 50px; ">
-	        <h2 align="center">71</h2> 
+	        <h2 align="center" style="margin-top:12px">71</h2> 
 	        <p align="center">- Canal 4 -</p>
 	      </div>
 

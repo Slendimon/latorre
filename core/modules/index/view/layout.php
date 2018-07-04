@@ -90,7 +90,7 @@ if(Session::getUID()!=""):
           <?php if($u->is_admin):?>
           <li><a  href="index.php?view=users"><i class="fa fa-users" style="margin-right: 9px; font-size:29px"></i>  Usuarios </a></li>
 
-          <li style=" margin-top:226%; position:absolute;">
+          <li style=" margin-top:228%; position:absolute;">
                 
             
 
