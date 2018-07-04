@@ -59,6 +59,16 @@ class PersonData {
 		return Model::many($query[0],new PersonData());
 	}
 
+	public static function getAlumn($buscar){
+		$sql = "select * from ".self::$tablename. $buscar;
+		?>
+			<script>console.log("<?php echo $sql;?>");</script>
+		<?php
+		$query = Executor::doit($sql);
+		return Model::many($query[0],new AssistanceData());
+	}
+	
+
 
 	public function getUnreads(){ return MessageData::getUnreadsByClientId($this->id); }
 
