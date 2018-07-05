@@ -13,8 +13,8 @@ class PersonData {
 
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (name,lastname,address,phone,email,canal,turno,tipo_person,user_id,created_at,c1_fullname,c1_address,c1_phone,c1_note) ";
-		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->email\",\"$this->canal\",\"$this->turno\",\"$this->tipo_person\",$this->user_id,$this->created_at,\"$this->c1_fullname\",\"$this->c1_address\",\"$this->c1_phone\",\"$this->c1_note\")";
+		$sql = "insert into ".self::$tablename." (name,lastname,address,phone,email,canal,turno,tipo_person,user_id,created_at,c1_fullname,c1_address,c1_phone,c1_note,dni) ";
+		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->email\",\"$this->canal\",\"$this->turno\",\"$this->tipo_person\",$this->user_id,$this->created_at,\"$this->c1_fullname\",\"$this->c1_address\",\"$this->c1_phone\",\"$this->c1_note\",\"$this->dni\")";
 		return Executor::doit($sql);
 	}
 

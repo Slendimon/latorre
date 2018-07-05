@@ -40,7 +40,7 @@
 		
 
 	      <div class="col-md-2" align="center" 
-	         class="grid-block" style="background-image: url('canal2.jpg'); width:160px; height:168px; min-width: 160px ; max-width: 160px; min-height: 168px; max-height: 168px; margin-left: 45px; border-style: solid; border-width:1px;  border-color:#000000">
+	         class="grid-block" style="background-image: url('canal2.jpg'); width:160px; height:168px; min-width: 140px ; max-width: 160px; min-height: 168px; max-height: 168px; margin-left: 45px; border-style: solid; border-width:1px;  border-color:#000000">
 	      </div>
 	      
 	      <div class="col-md-3"  style="background-color:#212121; width:250px; height:110px;max-width: 300px; min-height: 100px; min-width: 10px; min-width: 50px; ">

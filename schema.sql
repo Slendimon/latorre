@@ -18,6 +18,15 @@ create table user (
 insert into user (username,password,is_admin,created_at) value ("admin",sha1(md5("admin")),1,NOW());
 
 
+UPDATE person SET tipo_person=1 WHERE id=10;
+
+UPDATE person SET tipo_person=1 WHERE id=9;
+
+UPDATE person SET tipo_person=1 WHERE id=7;
+
+UPDATE person SET tipo_person=1 WHERE id=5;
+
+
 create table person(
 	id int not null auto_increment primary key,
 	image varchar(50),
