@@ -32,11 +32,11 @@
     if(($canal=="") &&  ($turno=="")){
         $buscar="";    
     }else if($canal==""){
-        $buscar=" Where " .$expresion2. " ";
+        $buscar=" and " .$expresion2;
     }else if($turno==""){
-        $buscar=" Where " .$expresion1. " ";
+        $buscar=" and " .$expresion1;
     }else{
-        $buscar=" Where " .$expresion1. " and ".$expresion2. " ";
+        $buscar=" and " .$expresion1. " and ".$expresion2;
     }
     ?>
 		<script>console.log("<?php echo $buscar;?>");</script>

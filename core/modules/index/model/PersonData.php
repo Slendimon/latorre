@@ -60,7 +60,7 @@ class PersonData {
 	}
 
 	public static function getAlumn($buscar){
-		$sql = "select * from ".self::$tablename. $buscar;
+		$sql = "select * from ".self::$tablename." where tipo_person='0'".$buscar;
 		?>
 			<script>console.log("<?php echo $sql;?>");</script>
 		<?php
