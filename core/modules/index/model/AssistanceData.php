@@ -51,6 +51,12 @@ class AssistanceData {
 		return Model::one($query[0],new AssistanceData());
 	}
 
+	public static function getByDni($dni,$mes){
+		$sql = "select * from ".self::$tablename." where person_id=$dni and MONTH(date_at)=$mes";
+		$query = Executor::doit($sql);
+		return Model::one($query[0],new AssistanceData());
+	}
+
 	public static function getByPD($person,$date_at){
 		$sql = "select * from ".self::$tablename." where person_id=$person and date_at=\"$date_at\"";
 		$query = Executor::doit($sql);

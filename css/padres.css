@@ -1,0 +1,52 @@
+body
+{
+	margin:0;
+}
+ul,li{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.calendar{padding:30px;}
+.calendar .day{
+	background:#ecf0f1;
+	border-bottom:2px solid #bdc3c7;
+	float:left;
+	margin:3px;
+	position:relative;
+	height:120px;
+	width:120px;
+}
+.day.marked{
+	background:#3498db;
+	border-color:#2980b9;
+}
+.day .day-number{
+	color:#7f8c8d;
+	left:5px;
+	position:absolute;
+	top:5px;
+}
+.day.marked .day-number{
+	color:white;
+}
+.day .events{
+	color:white;
+	margin:29px 7px 7px;
+	height:78px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+.day .events h5{
+	margin:0 0 5px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:100%;
+}
+.day .events strong,.day .events span{
+	display:block;
+	font-size:11px;
+}
+.day .events ul{}
+.day .events li{}
