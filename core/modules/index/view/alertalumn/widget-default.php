@@ -29,11 +29,12 @@
 								foreach($alumns as $mostrar){
 									if($mostrar->faltas >= 3){
 										$alumn = PersonData::getById($mostrar->person_id);
-										$turno = array("0"=>"sin asignar","1"=>"Mañana","2"=>"Tarde");
+										$turno = array(null=>"S/A","1"=>"Mañana","2"=>"Tarde");
+										$canal = array(null=>"S/A","1"=>"1","2"=>"2","3"=>"3","4"=>"4");
 										?>
 										<tr class="danger">
 											<td><?php echo ($alumn->name)." ".($alumn->lastname); ?></td>
-											<td><?php echo ("Canal ").($alumn->canal).(" - ").($turno[$alumn->turno]); ?></td>
+											<td><?php echo ("C ").($canal[$alumn->canal]).(" - T ").($turno[$alumn->turno]); ?></td>
 											<td><?php echo ($mostrar->faltas); ?></td>
 										</tr>
 										

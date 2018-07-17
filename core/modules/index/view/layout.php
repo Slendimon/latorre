@@ -28,6 +28,7 @@
 
 
     <script src="js/validar.js"></script>
+    <script src="js/buscar.js"></script>
 
 <?php if(isset($_GET["view"]) && $_GET["view"]=="home"):?>
 <link href='res/fullcalendar.min.css' rel='stylesheet' />

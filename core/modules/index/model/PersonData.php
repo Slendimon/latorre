@@ -79,6 +79,12 @@ class PersonData {
 		return Model::many($query[0],new PersonData());
 	}
 
+	public static function SearchAlum($nombre){
+		$sql = "select * from ".self::$tablename." where tipo_person='0' and concat(name,' ',lastname) like '%".$nombre."%'";
+		$query = Executor::doit($sql);
+		return Model::many($query[0],new AssistanceData());
+	}
+
 
 }
 
